@@ -8,7 +8,7 @@ li {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 26px; 
   font-style: italic;
   text-transform: uppercase;
 }
@@ -57,3 +57,31 @@ li {
 .related{
   list-style: none;
 }
+
+h1,h2,h3{
+  color: #1098ad;
+}
+
+.main-header{
+  background-color: #f7f7f7;
+}
+
+aside{
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child{
+  font-weight: bold;
+}
+
+/* Misconception this won't work */
+article p:first-child{
+  color:red;
+}
+
+/* a:link{
+  color: red;
+  text-decoration: none;
+} */
