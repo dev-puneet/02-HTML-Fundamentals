@@ -1,0 +1,5 @@
+Tools to validate ur code:
+
+HTML validator : to check the syntax of ur code is correct
+
+Diffchecker : to compare the differences b/w 2 pieces of code.

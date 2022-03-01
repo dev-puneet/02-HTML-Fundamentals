@@ -1,10 +1,53 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* Universal selector */
+* {
+  /* border-top:1px solid #1098ad;  */
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles which u want to get inherited */
+body {
   font-family: sans-serif;
+  color: #444;
+  border-top: 1px solid #1098ad;
+  position: relative;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  /* height: 80px; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+/* Images are inline-block */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
 }
 
 h1 {
@@ -15,10 +58,14 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  /* collasing margin with the paragraph above it. */
 }
 
 h4 {
@@ -30,12 +77,23 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
+li:last-child {
+  margin-bottom: 0;
+}
 /* footer p{
   font-size: 16px;
 } */
@@ -64,16 +122,6 @@ h3 {
   color: #1098ad;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
 li:first-child {
   font-weight: bold;
 }
@@ -83,19 +131,61 @@ article p:first-child {
   color: red;
 }
 
-a:any-link{
+a:any-link {
   color: #1098ad;
   text-decoration: none;
 }
 
-a:hover{
-  color:orangered;
+a:hover {
+  color: orangered;
   font-weight: bold;
-  text-decoration: underline  orangered;
+  text-decoration: underline orangered;
 }
 
-a:active{
+a:active {
   background-color: black;
   font-style: italic;
 }
-/* LHA */
+
+nav a:link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  /* padding: 20px; */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.like-button {
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+h2 {
+  position: relative;
+  /* background-color: orange; */
+}
+
+h2::after {
+  content: "TOP";
+  position: absolute;
+  font-size: 20px;
+  color: #444;
+  top: -10px;
+  right: -10px;
+  background-color: yellow;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+}
