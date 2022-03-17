@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
   background-color: #000;
   height:28px;
   width: 28px;
-  margin-right: 15px;
+  margin-right: 8px;
 }
 
 .color-blue{
@@ -80,7 +81,7 @@ background-color: aqua;
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
+ 
 }
 
 .details-list {
@@ -126,4 +127,36 @@ article{
   font-weight: bold;
   padding: 5px 10px;
 
+}
+
+/*  FLOATS */
+
+.product-img{
+  float: left;
+  margin-right: 40px;
+}
+.product-info{
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+ 
+}
+.product-details{
+  float:left;
+  width: 243px;
+  margin-top: 20px;
+}
+
+.price{
+  float: left;
+  margin-top: 20px;
+}
+.shipping{
+  float: right;
+  margin-top:24px;
+}
+
+.product-description{
+  clear: both;
+  margin-bottom: 10px;
 }
