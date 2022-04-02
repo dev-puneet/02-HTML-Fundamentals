@@ -152,7 +152,7 @@ a:active {
 
 nav a:link {
   display: inline-block;
-  margin-top: 10px;
+ 
   margin-right: 20px;
   /* padding: 20px; */
 }
@@ -194,6 +194,7 @@ h2::after {
 }
 
 /* FLOATS */
+/* 
 .author-img{
   float:left;
   margin-bottom: 20px;
@@ -214,7 +215,7 @@ nav{
 }
 
 /* clearfix class is added to thr element whosew height gets collapsed, and we add ::after to insert a pseudo element to the end of the header, and set the clear property to both, and content='' & display to block, since clear only works with block elements */
-
+/* 
 .clearfix::after{ 
   content: '';
   display: block;
@@ -223,17 +224,75 @@ nav{
 
 article{
 /* background-color: red; */
-float: left;
+/* float: left;
 width:825px;
 }
 
 aside{
 /* background-color: green; */
-float:right;
+/* float:right;
 width:300px;
 }
 
 footer{
 /* background-color: yellow; */
-clear:both;
+/* clear:both;
+}  */ 
+
+/* flexbox */
+
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.author-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author{
+  margin-bottom: 0;
+  margin-left: 15px;;
+}
+
+.related-posts{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-author{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+
+  
+}
+
+.row{
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+aside{
+  /* DEfaULT VALUES
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+    flex : 0 0 300px;
+}
+
