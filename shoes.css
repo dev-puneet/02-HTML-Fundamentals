@@ -50,11 +50,11 @@ body {
 }
 
 .color{
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #000;
   height:28px;
   width: 28px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .color-blue{
@@ -130,7 +130,7 @@ article{
 }
 
 /*  FLOATS */
-
+/* 
 .product-img{
   float: left;
   margin-right: 40px;
@@ -159,4 +159,33 @@ article{
 .product-description{
   clear: both;
   margin-bottom: 10px;
+} */
+
+/* Flexbox */
+
+.row{
+  display: flex;
+  /* justify-content: space-between; */
+  gap:20px;
+}
+.product-info{
+  flex: 1;
+}
+.product-details{
+  flex: 1;
+}
+.pricerow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shipping{
+  margin-bottom: 0;
+}
+.color{
+  margin-right: 0;
+}
+.colors{
+  display: flex;
+  gap: 10px;
 }
